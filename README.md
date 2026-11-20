@@ -4,7 +4,7 @@ You can use all the things on this repository in any project for free and withou
 
 <h2>How is it made?</h2>
 I photograph walls and ground, and then use a simple script to lower the resolution.</br>
-Script to lower the resolution is made by gemini ai, but the images are made by me and other contributors.
+Script to lower the resolution was made by gemini ai, but the images are made by me and other contributors.
 
 ## Tools & Automation
 
