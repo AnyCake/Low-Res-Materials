@@ -11,19 +11,12 @@ SIZES = {
 EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
 
-def resize_keep_aspect(img: Image.Image, max_side: int) -> Image.Image:
-    width, height = img.size
-    if width <= 0 or height <= 0:
-        raise ValueError(f"Invalid image dimensions: {width}x{height}")
-
-    if width >= height:
-        new_width = max_side
-        new_height = max(1, round(height * (max_side / width)))
-    else:
-        new_height = max_side
-        new_width = max(1, round(width * (max_side / height)))
-
-    return img.resize((new_width, new_height), resample=Image.Resampling.NEAREST)
+def clear_output_dirs() -> None:
+    for out_dir in SIZES.values():
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for item in out_dir.iterdir():
+            if item.is_file() or item.is_symlink():
+                item.unlink()
 
 
 def process_image(src_path: Path) -> None:
@@ -33,15 +26,21 @@ def process_image(src_path: Path) -> None:
     stem = src_path.stem
 
     for size, out_dir in SIZES.items():
-        out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{stem}.png"
-        resized = resize_keep_aspect(img, size)
-        resized.save(out_path, format="PNG", optimize=True)
+        square = ImageOps.fit(
+            img,
+            (size, size),
+            method=Image.Resampling.NEAREST,
+            centering=(0.5, 0.5),
+        )
+        square.save(out_path, format="PNG", optimize=True)
 
 
 def main() -> None:
+    clear_output_dirs()
+
     if not INPUT_DIR.exists():
-        print("Directory 'Original-Photos' not found.")
+        print("Directory 'Original-Photos' not found. Cleared output directories.")
         return
 
     files = sorted(
@@ -50,7 +49,7 @@ def main() -> None:
     )
 
     if not files:
-        print("No images found to process.")
+        print("No images found to process. Cleared output directories.")
         return
 
     for file_path in files:
