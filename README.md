@@ -1,7 +1,7 @@
 # Low Res Materials
 Free low resolution materials for games and other projects.</br>
 You can use all the things on this repository in any project for free and without any attribution.</br>
-Licensed under [CC0-1.0 license](LICENSE)
+Licensed under [CC0-1.0 license](LICENSE)</br>
 Some photos in low res looks better, some worse ;)</br>
 
 <h2>How is it made?</h2>
