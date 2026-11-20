@@ -8,7 +8,7 @@ Script to lower the resolution is made by gemini ai, but the images are made by 
 
 ## Tools & Automation
 
-- **Python** & **Pillow (`PIL`)** – used in the processing script to crop and scale textures down to `64x64`, `128x128`, and `256x256` (`64p`, `128p`, `256p`).
+- **Python** & **Pillow (`PIL`)** – used in the processing script to crop and scale textures down to `64p`, `128p`, and `256p`
 - **GitHub Actions** – automatically runs the processing script on updates to source images and commits the generated textures.
 - This license applies only to the contents of this repository and does not alter the licenses of third-party tools, runtimes, or libraries used to build or run it.
 
