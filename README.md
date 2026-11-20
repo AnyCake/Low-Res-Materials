@@ -1,4 +1,4 @@
-# Low-Res-Materials
+# Low Res Materials
 Free low resolution materials for games and other projects.</br>
 You can use all the things on this repository in any project for free and without any attribution.
 
