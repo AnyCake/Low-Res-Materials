@@ -4,9 +4,6 @@ You can use all the things on this repository in any project for free and withou
 Licensed under [CC0-1.0 license](LICENSE)</br>
 Some photos in low res looks better, some worse ;)</br>
 
-> [!IMPORTANT]
-> Not all images are squares, if your game engine requires squares, then just crop them.
-
 <h2>How is it made?</h2>
 I photograph walls and ground, and then use a simple script to lower the resolution.</br>
 Script to lower the resolution was made by gemini ai, but the images are made by me and other contributors.
