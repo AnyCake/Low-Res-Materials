@@ -3,7 +3,10 @@ Free low resolution materials for games and other projects.</br>
 You can use all the things on this repository in any project for free and without any attribution.</br>
 Licensed under [CC0-1.0 license](LICENSE)</br>
 Some photos in low res looks better, some worse ;)</br>
-Not all images are squares, if your game engine requires squares, then just crop them.
+
+
+> [!TIP]
+> Not all images are squares, if your game engine requires squares, then just crop them.
 
 <h2>How is it made?</h2>
 I photograph walls and ground, and then use a simple script to lower the resolution.</br>
