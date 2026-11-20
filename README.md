@@ -1,5 +1,6 @@
 # Low-Res-Materials
 Free low resolution materials for games and other projects.
+You can use all the things on this repository in any project for free and without any attribution.
 
 <h2>How is it made?</h2>
 I photograph walls and ground, and then use simple script to lower the resolution.
