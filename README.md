@@ -1,8 +1,8 @@
 # Low Res Materials
 Free low resolution materials for games and other projects.</br>
 You can use all the things on this repository in any project for free and without any attribution.</br>
-Some photos in low res looks better, some worse ;)
-<img src="128p/IMG_20261120_135258147.png" alt="IMG_20261120_135258147" width="128" />
+Some photos in low res looks better, some worse ;)</br>
+<img src="128p/IMG_20261120_135258147.png" alt="IMG_20261120_135258147" width="256" />
 
 <h2>How is it made?</h2>
 I photograph walls and ground, and then use a simple script to lower the resolution.</br>
